@@ -29,14 +29,14 @@ func TestHoriz(t *testing.T) {
 	// Test intercept of horizontal line.
 	expIntc := 9.0
 	actIntc := line.Intc()
-	if expIntc != actIntc {
+	if !Near(expIntc, actIntc) {
 		t.Error("Expected", expIntc, "got", actIntc)
 	}
 
 	// Test slope of horizontal line.
 	expSlope := 0.0
 	actSlope := line.Slope()
-	if expSlope != actSlope {
+	if !Near(expSlope, actSlope) {
 		t.Error("Expected", expSlope, "got", actSlope)
 	}
 }
@@ -128,7 +128,7 @@ func TestLength(t *testing.T) {
 	// Test length of normal line segment.
 	expLen := 5.0
 	actLen := line.Length()
-	if expLen != actLen {
+	if !Near(expLen, actLen) {
 		t.Error("Expected", expLen, "got", actLen)
 	}
 }
@@ -157,14 +157,14 @@ func TestNormal(t *testing.T) {
 	// Test intercept of normal line.
 	expIntc := 3.0
 	actIntc := line.Intc()
-	if expIntc != actIntc {
+	if !Near(expIntc, actIntc) {
 		t.Error("Expected", expIntc, "got", actIntc)
 	}
 
 	// Test slope of normal line.
 	expSlope := 2.0
 	actSlope := line.Slope()
-	if expSlope != actSlope {
+	if !Near(expSlope, actSlope) {
 		t.Error("Expected", expSlope, "got", actSlope)
 	}
 }

@@ -10,10 +10,10 @@ func TestRect(t *testing.T) {
 	actArea := r.Area()
 	actPerim := r.Perim()
 
-	if expArea != actArea {
+	if !Near(expArea, actArea) {
 		t.Error("Expected", expArea, "got", actArea)
 	}
-	if expPerim != actPerim {
+	if !Near(expPerim, actPerim) {
 		t.Error("Expected", expPerim, "got", actPerim)
 	}
 }

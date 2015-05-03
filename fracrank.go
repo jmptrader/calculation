@@ -13,7 +13,7 @@ func FracRank(values []float64, value float64) float64 {
 		return 1.0
 	}
 	for i := 0; i < n-1; i++ {
-		if value == values[i] {
+		if Near(value, values[i]) {
 			return float64(i) / float64(n-1)
 		} else if value < values[i+1] {
 			keyFloor := float64(i) / float64(n-1)

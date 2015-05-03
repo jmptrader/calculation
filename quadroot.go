@@ -16,7 +16,7 @@ func QuadRoot(a float64, b float64, c float64) []float64 {
 	// Calculate the first root.
 	x1 := (-1*b + r) / (2.0 * a)
 	roots = append(roots, x1)
-	if disc == 0.0 {
+	if Near(disc, 0.0) {
 		return roots
 	}
 

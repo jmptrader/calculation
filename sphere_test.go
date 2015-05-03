@@ -12,13 +12,13 @@ func TestSphere(t *testing.T) {
 	actSurfArea := s.SurfArea()
 	actVol := s.Vol()
 
-	if expDiam != actDiam {
+	if !Near(expDiam, actDiam) {
 		t.Error("Expected", expDiam, "got", actDiam)
 	}
-	if expSurfArea != actSurfArea {
+	if !Near(expSurfArea, actSurfArea) {
 		t.Error("Expected", expSurfArea, "got", actSurfArea)
 	}
-	if expVol != actVol {
+	if !Near(expVol, actVol) {
 		t.Error("Expected", expVol, "got", actVol)
 	}
 }

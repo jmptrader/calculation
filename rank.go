@@ -7,13 +7,13 @@ func Rank(value float64, values []float64, ascending bool) int {
 	sort.Float64s(values)
 	if ascending {
 		for i := 0; i < len(values); i++ {
-			if value == values[i] {
+			if Near(value, values[i]) {
 				return i
 			}
 		}
 	} else {
 		for i := len(values) - 1; i >= 0; i-- {
-			if value == values[i] {
+			if Near(value, values[i]) {
 				return i
 			}
 		}

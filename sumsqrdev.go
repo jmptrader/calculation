@@ -1,11 +1,11 @@
 package calc
 
 // SumSqrDev returns the sum of squared deviations from the mean.
-func SumSqrDev(values []float64) float64 {
-	mean := Mean(values)
+func SumSqrDev(vals []float64) float64 {
+	mean := Mean(vals)
 	sum := 0.0
-	for _, value := range values {
-		dev := value - mean
+	for _, val := range vals {
+		dev := val - mean
 		sum += dev * dev
 	}
 	return sum

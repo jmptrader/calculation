@@ -1,10 +1,10 @@
 package calc
 
 // Mean returns the arithmetic mean.
-func Mean(values []float64) float64 {
+func Mean(vals []float64) float64 {
 	sum := 0.0
-	for _, value := range values {
-		sum += value
+	for _, val := range vals {
+		sum += val
 	}
-	return sum / float64(len(values))
+	return sum / float64(len(vals))
 }

@@ -1,15 +1,15 @@
 package calc
 
 // SkewPop returns the population skew.
-func SkewPop(values []float64) float64 {
-	mean := Mean(values)
-	stdDev := StdDevPop(values)
+func SkewPop(vals []float64) float64 {
+	mean := Mean(vals)
+	stdDev := StdDevPop(vals)
 	sum := 0.0
-	for _, value := range values {
-		dev := (value - mean) / stdDev
+	for _, val := range vals {
+		dev := (val - mean) / stdDev
 		sum += dev * dev * dev
 	}
-	n := len(values)
+	n := len(vals)
 
 	// Calculate left factor from its numerator and denominator.
 	leftFacDenom := (n - 1) * (n - 2)

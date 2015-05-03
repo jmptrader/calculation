@@ -1,10 +1,10 @@
 package calc
 
 // HarMean returns the harmonic mean.
-func HarMean(values []float64) float64 {
+func HarMean(vals []float64) float64 {
 	sum := 0.0
-	for _, value := range values {
-		sum += 1 / value
+	for _, val := range vals {
+		sum += 1 / val
 	}
-	return float64(len(values)) / sum
+	return float64(len(vals)) / sum
 }

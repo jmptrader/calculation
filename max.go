@@ -1,11 +1,11 @@
 package calc
 
 // Max returns the largest number.
-func Max(values []float64) float64 {
-	max := values[0]
-	for _, value := range values {
-		if value > max {
-			max = value
+func Max(vals []float64) float64 {
+	max := vals[0]
+	for _, val := range vals {
+		if val > max {
+			max = val
 		}
 	}
 	return max

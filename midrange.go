@@ -1,15 +1,15 @@
 package calc
 
 // Midrange returns the average of the min and max.
-func Midrange(values []float64) float64 {
-	min := values[0]
-	max := values[0]
-	for _, value := range values {
-		if value < min {
-			min = value
+func Midrange(vals []float64) float64 {
+	min := vals[0]
+	max := vals[0]
+	for _, val := range vals {
+		if val < min {
+			min = val
 		}
-		if value > max {
-			max = value
+		if val > max {
+			max = val
 		}
 	}
 	return (min + max) / 2.0

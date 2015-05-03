@@ -1,12 +1,12 @@
 package calc
 
 // Var returns the sample variance.
-func Var(values []float64) float64 {
-	mean := Mean(values)
+func Var(vals []float64) float64 {
+	mean := Mean(vals)
 	sum := 0.0
-	for _, value := range values {
-		dev := value - mean
+	for _, val := range vals {
+		dev := val - mean
 		sum += dev * dev
 	}
-	return sum / float64(len(values)-1)
+	return sum / float64(len(vals)-1)
 }

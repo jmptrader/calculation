@@ -1,16 +1,16 @@
 package calc
 
 // KurtPop returns the population kurtosis.
-func KurtPop(values []float64) float64 {
-	mean := Mean(values)
-	stdDev := StdDevPop(values)
+func KurtPop(vals []float64) float64 {
+	mean := Mean(vals)
+	stdDev := StdDevPop(vals)
 	sum := 0.0
-	for _, value := range values {
-		dev := (value - mean) / stdDev
+	for _, val := range vals {
+		dev := (val - mean) / stdDev
 		dev *= dev
 		sum += dev * dev
 	}
-	n := len(values)
+	n := len(vals)
 
 	// Calculate left factor from its numerator and denominator.
 	leftFacNumer := n * (n + 1)

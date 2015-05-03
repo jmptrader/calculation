@@ -1,16 +1,16 @@
 package calc
 
 // Kurt returns the sample kurtosis.
-func Kurt(values []float64) float64 {
-	mean := Mean(values)
-	stdDev := StdDev(values)
+func Kurt(vals []float64) float64 {
+	mean := Mean(vals)
+	stdDev := StdDev(vals)
 	sum := 0.0
-	for _, value := range values {
-		dev := (value - mean) / stdDev
+	for _, val := range vals {
+		dev := (val - mean) / stdDev
 		dev *= dev
 		sum += dev * dev
 	}
-	n := len(values)
+	n := len(vals)
 
 	// Calculate left factor from its numerator and denominator.
 	leftFacNumer := n * (n + 1)

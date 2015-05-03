@@ -5,7 +5,7 @@ import (
 	"sort"
 )
 
-// FracLim returns the limiting alue below which a fraction of the list lies.
+// FracLim returns the limiting value below which a fraction of the list lies.
 // If fraction is 1.0, the maximum is returned.
 // If fraction is 0.5, the median is returned.
 // If fraction is 0.0, the minimum is returned.

@@ -8,11 +8,11 @@ func Prod(vals []float64) float64 {
 	sort.Float64s(vals)
 	n := len(vals)
 	prod := 1.0
-	medium := vals[n/2]
+	med := vals[n/2]
 	i := 0
 	j := n - 1
 	for i <= j {
-		if prod > medium {
+		if prod > med {
 			prod *= vals[i]
 			i++
 		} else {

@@ -2,20 +2,20 @@ package calc
 
 // Mode returns the most common value(s), if any.
 func Mode(vals []float64) []float64 {
-	counts := make(map[float64]int)
+	cnts := make(map[float64]int)
 	max := 0
 	for _, val := range vals {
-		counts[val]++
-		if counts[val] > max {
-			max = counts[val]
+		cnts[val]++
+		if cnts[val] > max {
+			max = cnts[val]
 		}
 	}
-	modes := make([]float64, 1, len(counts))
+	modes := make([]float64, 1, len(cnts))
 
 	// A mode must occur more than once.
 	if max > 1 {
-		for val, count := range counts {
-			if count == max {
+		for val, cnt := range cnts {
+			if cnt == max {
 				// Every val with a max count is a mode.
 				modes = append(modes, val)
 			}

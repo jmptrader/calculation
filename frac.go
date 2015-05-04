@@ -1,50 +1,50 @@
 package calc
 
 type Frac struct {
-	Numer int
-	Denom int
+	Num int
+	Den int
 }
 
 // Add sums two fractions.
 func Add(frac1 Frac, frac2 Frac) Frac {
 	// Adjust fractions to common denominator.
-	numer := frac1.Numer*frac2.Denom + frac1.Denom*frac2.Numer
-	denom := frac1.Denom * frac2.Denom
+	num := frac1.Num*frac2.Den + frac1.Den*frac2.Num
+	den := frac1.Den * frac2.Den
 
 	// Yield result.
-	return Frac{numer, denom}
+	return Frac{num, den}
 
 }
 
 // Sub subtracts two fractions.
 func Sub(frac1 Frac, frac2 Frac) Frac {
 	// Adjust fractions to common denominator.
-	numer := frac1.Numer*frac2.Denom - frac1.Denom*frac2.Numer
-	denom := frac1.Denom * frac2.Denom
+	num := frac1.Num*frac2.Den - frac1.Den*frac2.Num
+	den := frac1.Den * frac2.Den
 
 	// Yield result.
-	return Frac{numer, denom}
+	return Frac{num, den}
 
 }
 
 // Mul multiplies two fractions.
 func Mul(frac1 Frac, frac2 Frac) Frac {
 	// Adjust fractions to common denominator.
-	numer := frac1.Numer * frac2.Numer
-	denom := frac1.Denom * frac2.Denom
+	num := frac1.Num * frac2.Num
+	den := frac1.Den * frac2.Den
 
 	// Yield result.
-	return Frac{numer, denom}
+	return Frac{num, den}
 
 }
 
 // Div divides two fractions.
 func Div(frac1 Frac, frac2 Frac) Frac {
 	// Adjust fractions to common denominator.
-	numer := frac1.Numer * frac2.Denom
-	denom := frac1.Denom * frac2.Numer
+	num := frac1.Num * frac2.Den
+	den := frac1.Den * frac2.Num
 
 	// Yield result.
-	return Frac{numer, denom}
+	return Frac{num, den}
 
 }

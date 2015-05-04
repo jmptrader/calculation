@@ -13,14 +13,14 @@ func KurtPop(vals []float64) float64 {
 	n := len(vals)
 
 	// Calculate left factor from its numerator and denominator.
-	leftFacNumer := n * (n + 1)
-	leftFacDenom := (n - 1) * (n - 2) * (n - 3)
-	lf := float64(leftFacNumer) / float64(leftFacDenom)
+	leftFacNum := n * (n + 1)
+	leftFacDen := (n - 1) * (n - 2) * (n - 3)
+	lf := float64(leftFacNum) / float64(leftFacDen)
 
 	// Calculate right addend from its numerator and denominator.
-	rightAdnNumer := 3 * (n - 1) * (n - 1)
-	rightAdnDenom := (n - 2) * (n - 3)
-	rightAdn := float64(rightAdnNumer) / float64(rightAdnDenom)
+	rightAdnNum := 3 * (n - 1) * (n - 1)
+	rightAdnDen := (n - 2) * (n - 3)
+	rightAdn := float64(rightAdnNum) / float64(rightAdnDen)
 
 	// Return formula.
 	return lf*sum - rightAdn

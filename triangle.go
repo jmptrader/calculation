@@ -40,17 +40,17 @@ func (t *Triangle) EqualSides() int {
 	len3 := math.Sqrt(a*a + b*b)
 
 	// Count pairs of equal sides.
-	count := 0
+	cnt := 0
 	if Near(len1, len2) {
-		count++
+		cnt++
 	}
 	if Near(len2, len3) {
-		count++
+		cnt++
 	}
 	if Near(len1, len3) {
-		count++
+		cnt++
 	}
-	return count
+	return cnt
 }
 
 // Perim gives perimeter.

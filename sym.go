@@ -1,13 +1,13 @@
 // Package sym provides symbol table functionality.
 package calc
 
-type Table struct {
+type Tbl struct {
 	words map[string]int
 	syms  map[int]string
 }
 
 // Add adds a word to the table.
-func (t *Table) Add(word string) {
+func (t *Tbl) Add(word string) {
 	_, ok := t.words[word]
 	if !ok {
 		i := len(t.words) + 1

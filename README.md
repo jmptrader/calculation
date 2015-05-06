@@ -19,7 +19,7 @@ Here is a list of functions in this stat library compared to OpenOffice function
 
 | stat | OpenOffice |
 | ---- | ---------- |
-| BinomProb, BinomDist | B, BINOMDIST |
+| BinProb, BinDist | B, BINOMDIST |
 | FracLim | PERCENTILE, QUARTILE |
 | FracRank | PERCENTRANK |
 | GeomMean | GEOMEAN |

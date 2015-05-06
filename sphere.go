@@ -12,8 +12,8 @@ func (s *Sphere) Diam() float64 {
 	return 2.0 * s.Radius
 }
 
-// SurfArea gives surface area.
-func (s *Sphere) SurfArea() float64 {
+// SurfaceArea gives surface area.
+func (s *Sphere) SurfaceArea() float64 {
 	return 4.0 * math.Pi * s.Radius * s.Radius
 }
 

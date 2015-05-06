@@ -21,8 +21,8 @@ func (l *Line) IsHoriz() bool {
 	return Near(l.Point1.Y, l.Point2.Y)
 }
 
-// IsParl checks if l1 is parallel to l2.
-func (l1 *Line) IsParl(l2 *Line) bool {
+// IsParallel checks if l1 is parallel to l2.
+func (l1 *Line) IsParallel(l2 *Line) bool {
 	if l1.IsVert() && l2.IsVert() {
 		return true
 	}

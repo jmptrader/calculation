@@ -1,7 +1,7 @@
 package calc
 
-// BinomProb returns the probablility of k successes in n trials in a binomial distribution.
-func BinomProb(prob float64, n int, k int) float64 {
+// BinProb returns the probablility of k successes in n trials in a binomial distribution.
+func BinProb(prob float64, n int, k int) float64 {
 	facs := make([]float64, 0, 3*n)
 	for i := 1; i <= k; i++ {
 		// prob^k * 1/i! * n(n-1)...(n-k+1)

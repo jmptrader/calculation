@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func TestHoriz(t *testing.T) {
+func TestLineHoriz(t *testing.T) {
 	// Make horizontal line.
 	point1 := Point{3.0, 9.0}
 	point2 := Point{5.0, 9.0}
@@ -41,7 +41,7 @@ func TestHoriz(t *testing.T) {
 	}
 }
 
-func TestIsParallel(t *testing.T) {
+func TestLineIsParallel(t *testing.T) {
 	// Make parallel lines.
 	point1 := Point{2.0, 11.0}
 	point2 := Point{3.0, 14.0}
@@ -74,7 +74,7 @@ func TestIsParallel(t *testing.T) {
 	}
 }
 
-func TestIsPerp(t *testing.T) {
+func TestLineIsPerp(t *testing.T) {
 	// Make perpendicular lines.
 	point1 := Point{3.0, 14.0}
 	point2 := Point{6.0, 23.0}
@@ -107,7 +107,7 @@ func TestIsPerp(t *testing.T) {
 	}
 }
 
-func TestIsValid(t *testing.T) {
+func TestLineIsValid(t *testing.T) {
 	// Make invalid line.
 	point1 := Point{3.0, 9.0}
 	point2 := Point{3.0, 9.0}
@@ -119,7 +119,7 @@ func TestIsValid(t *testing.T) {
 	}
 }
 
-func TestLength(t *testing.T) {
+func TestLineLength(t *testing.T) {
 	// Make normal line segment.
 	point1 := Point{3.0, 6.0}
 	point2 := Point{6.0, 10.0}
@@ -133,7 +133,7 @@ func TestLength(t *testing.T) {
 	}
 }
 
-func TestNormal(t *testing.T) {
+func TestLineNormal(t *testing.T) {
 	// Make normal line.
 	point1 := Point{3.0, 9.0}
 	point2 := Point{5.0, 13.0}
@@ -169,7 +169,7 @@ func TestNormal(t *testing.T) {
 	}
 }
 
-func TestVert(t *testing.T) {
+func TestLineVert(t *testing.T) {
 	// Make vertical line.
 	point1 := Point{3.0, 9.0}
 	point2 := Point{3.0, 13.0}

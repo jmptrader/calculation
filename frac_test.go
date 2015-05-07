@@ -2,7 +2,7 @@ package calc
 
 import "testing"
 
-func TestAdd(t *testing.T) {
+func TestFracAdd(t *testing.T) {
 	exp := Frac{29, 21}
 	frac1 := Frac{2, 3}
 	frac2 := Frac{5, 7}
@@ -16,7 +16,7 @@ func TestAdd(t *testing.T) {
 	}
 }
 
-func TestSub(t *testing.T) {
+func TestFracSub(t *testing.T) {
 	exp1 := Frac{-1, 21}
 	frac1 := Frac{2, 3}
 	frac2 := Frac{5, 7}
@@ -31,7 +31,7 @@ func TestSub(t *testing.T) {
 	}
 }
 
-func TestMul(t *testing.T) {
+func TestFracMul(t *testing.T) {
 	exp := Frac{10, 21}
 	frac1 := Frac{2, 3}
 	frac2 := Frac{5, 7}
@@ -45,7 +45,7 @@ func TestMul(t *testing.T) {
 	}
 }
 
-func TestDiv(t *testing.T) {
+func TestFracDiv(t *testing.T) {
 	exp1 := Frac{14, 15}
 	frac1 := Frac{2, 3}
 	frac2 := Frac{5, 7}

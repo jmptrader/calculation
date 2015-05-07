@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func TestEquilateral(t *testing.T) {
+func TestTriangleEquilateral(t *testing.T) {
 	// Test an equilateral triangle.
 	point1 := Point{2.0, 2.0}
 	point2 := Point{6.0, 2.0}
@@ -28,7 +28,7 @@ func TestEquilateral(t *testing.T) {
 	}
 }
 
-func TestRight(t *testing.T) {
+func TestTriangleRight(t *testing.T) {
 	// Test a 3-4-5 right triangle.
 	point1 := Point{2.0, 2.0}
 	point2 := Point{2.0, 6.0}

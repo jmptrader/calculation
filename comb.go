@@ -10,27 +10,27 @@ func Comb(n int, r int) int {
 	// Get counts of all prime factors in numerator.
 	nums := make(map[int]int)
 	for i := n - r + 1; i <= n; i++ {
-		facs := Fac(i)
-		for fac, cnt := range facs {
-			nums[fac] += cnt
+		factors := Factor(i)
+		for factor, cnt := range factors {
+			nums[factor] += cnt
 		}
 	}
 
 	// Get counts of all prime factors in denominator.
 	dens := make(map[int]int)
 	for i := 2; i <= r; i++ {
-		facs := Fac(i)
-		for fac, cnt := range facs {
-			dens[fac] += cnt
+		factors := Factor(i)
+		for factor, cnt := range factors {
+			dens[factor] += cnt
 		}
 	}
 
 	// Cancel out any common factors, and calculate result.
 	comb := 1
-	for fac, cnt := range nums {
-		f := cnt - dens[fac]
+	for factor, cnt := range nums {
+		f := cnt - dens[factor]
 		for i := 0; i < f; i++ {
-			comb *= fac
+			comb *= factor
 		}
 	}
 	return comb

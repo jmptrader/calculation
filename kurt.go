@@ -13,15 +13,15 @@ func Kurt(vals []float64) float64 {
 	n := len(vals)
 
 	// Calculate left factor from its numerator and denominator.
-	leftFacNum := n * (n + 1)
-	leftFacDen := (n - 1) * (n - 2) * (n - 3)
-	leftFac := float64(leftFacNum) / float64(leftFacDen)
+	leftFactorNum := n * (n + 1)
+	leftFactorDen := (n - 1) * (n - 2) * (n - 3)
+	leftFactor := float64(leftFactorNum) / float64(leftFactorDen)
 
 	// Calculate right addend from its numerator and denominator.
-	rightAdnNum := 3 * (n - 1) * (n - 1)
-	rightAdnDen := (n - 2) * (n - 3)
-	rightAdn := float64(rightAdnNum) / float64(rightAdnDen)
+	rightAddendNum := 3 * (n - 1) * (n - 1)
+	rightAddendDen := (n - 2) * (n - 3)
+	rightAddend := float64(rightAddendNum) / float64(rightAddendDen)
 
 	// Return formula.
-	return leftFac*sum - rightAdn
+	return leftFactor*sum - rightAddend
 }

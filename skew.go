@@ -12,9 +12,9 @@ func Skew(vals []float64) float64 {
 	n := len(vals)
 
 	// Calculate left factor from its numerator and denominator.
-	leftFacDen := (n - 1) * (n - 2)
-	leftFac := float64(n) / float64(leftFacDen)
+	leftFactorDen := (n - 1) * (n - 2)
+	leftFactor := float64(n) / float64(leftFactorDen)
 
 	// Return formula.
-	return leftFac * sum
+	return leftFactor * sum
 }

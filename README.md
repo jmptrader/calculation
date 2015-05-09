@@ -11,9 +11,6 @@ The functions are a diverse set related to:
 * Probability
 * Statistics
 
-## Programming notes
-See [abbreviation](https://www.github.com/BluntSporks/abbreviation) for a list of abbreviations used.
-
 ## Comparison to OpenOffice
 Here is a list of functions in this stat library compared to OpenOffice functions.
 
@@ -43,9 +40,15 @@ Here is a list of functions in this stat library compared to OpenOffice function
 | SkewPop | n/a |
 | Small | SMALL |
 | StdDev | STDEV |
+| StdErr | n/a |
 | StdDevPop | STDEVP |
+| StdErrPop | n/a |
 | SumSqrDev | DEVSQ |
 | TrimMean | TRIMMEAN |
 | Var | VAR |
 | VarPop | VARP |
 | WeightedMean | n/a |
+
+## Programming notes
+See [abbreviation](https://www.github.com/BluntSporks/abbreviation) for a list of abbreviations used.
+

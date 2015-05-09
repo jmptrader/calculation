@@ -22,7 +22,6 @@ Here is a list of functions in this stat library compared to OpenOffice function
 | GeomMean | GEOMEAN |
 | HarMean | HARMEAN |
 | Kurt | KURT |
-| KurtPop | n/a |
 | Large | LARGE |
 | Max | MAX |
 | Mean | AVERAGE |

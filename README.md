@@ -36,7 +36,6 @@ Here is a list of functions in this stat library compared to OpenOffice function
 | Rank | RANK |
 | RootMeanSqr | n/a |
 | Skew | SKEW |
-| SkewPop | n/a |
 | Small | SMALL |
 | StdDev | STDEV |
 | StdErr | n/a |

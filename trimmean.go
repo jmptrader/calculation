@@ -9,7 +9,7 @@ func TrimMean(vals []float64, f float64) float64 {
 	low := int(float64(len(vals)) * f / 2.0)
 	high := len(vals) - low
 	sum := 0.0
-	for i := low; i <= high; i++ {
+	for i := low; i < high; i++ {
 		sum += vals[i]
 	}
 	n := high - low

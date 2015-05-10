@@ -41,7 +41,7 @@ Here is a list of functions in this stat library compared to OpenOffice function
 | StdDevPop | STDEVP |
 | StdErrPop | n/a |
 | SumSqrDev | DEVSQ |
-| TrimMean | TRIMMEAN |
+| TrimmedMean | TRIMMEAN |
 | Var | VAR |
 | VarPop | VARP |
 | WeightedMean | n/a |

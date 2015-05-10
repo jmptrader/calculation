@@ -30,7 +30,6 @@ Here is a list of functions in this stat library compared to OpenOffice function
 | Midrange | n/a |
 | Min | MIN |
 | Mode | MODE |
-| Moment | n/a |
 | Prod | n/a |
 | Range | n/a |
 | Rank | RANK |

@@ -3,8 +3,11 @@ package calc
 import "math"
 
 // Dist returns the distance between two coordinates.
-func Dist(x1, y1, x2, y2 float64) float64 {
-	a := x1 - x2
-	b := y1 - y2
-	return math.Sqrt(a*a + b*b)
+func Dist(point1 []float64, point2 []float64) float64 {
+	sum := 0.0
+	for i, _ := range point1 {
+		term := point2[i] - point1[i]
+		sum += term * term
+	}
+	return math.Sqrt(sum)
 }

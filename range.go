@@ -1,6 +1,7 @@
 package calc
 
 // Range returns the difference between max and min.
+// See https://en.wikipedia.org/wiki/Range_(statistics).
 func Range(vals []float64) float64 {
 	min := vals[0]
 	max := vals[0]

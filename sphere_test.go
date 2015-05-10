@@ -4,8 +4,8 @@ import "testing"
 
 func TestSphere(t *testing.T) {
 	expDiam := 4.0
-	expSurfaceArea := 50.26548245743669
-	expVol := 33.51032163829113
+	expSurfaceArea := 50.26548246
+	expVol := 33.51032164
 
 	s := Sphere{2.0}
 	actDiam := s.Diam()

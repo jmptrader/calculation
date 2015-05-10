@@ -3,9 +3,9 @@ package calc
 import "testing"
 
 func TestCircle(t *testing.T) {
-	expArea := 28.274333882308138
+	expArea := 28.27433388
 	expDiam := 6.0
-	expPerim := 18.84955592153876
+	expPerim := 18.84955592
 
 	c := Circle{3.0}
 	actArea := c.Area()

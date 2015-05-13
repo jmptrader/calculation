@@ -2,16 +2,16 @@ package calc
 
 import "testing"
 
-func TestIsElem(t *testing.T) {
-	A := ToMap([]int{1, 3})
+func TestSetIsElem(t *testing.T) {
+	setA := ToMap([]int{1, 3})
 
 	// Test some elements.
-	if !IsElem(1, A) || !IsElem(3, A) {
+	if !setA.IsElem(1) || !setA.IsElem(3) {
 		t.Error("Expected true, got false")
 	}
 
 	// Test some nonelements.
-	if IsElem(0, A) || IsElem(2, A) || IsElem(4, A) {
+	if setA.IsElem(0) || setA.IsElem(2) || setA.IsElem(4) {
 		t.Error("Expected false, got true")
 	}
 }

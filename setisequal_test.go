@@ -2,30 +2,30 @@ package calc
 
 import "testing"
 
-func TestIsEqual(t *testing.T) {
-	A := ToMap([]int{1, 2, 3})
-	B := ToMap([]int{3, 1, 2})
+func TestSetIsEqual(t *testing.T) {
+	setA := ToMap([]int{1, 2, 3})
+	setB := ToMap([]int{3, 1, 2})
 
 	// Two maps should be equal regardless of order.
-	if !IsEqual(A, B) {
+	if !setA.IsEqual(setB) {
 		t.Error("Expected true, got false")
 	}
 
 	// Two maps should be not equal if new element.
-	B[4] = true
-	if IsEqual(A, B) {
+	setB[4] = true
+	if setA.IsEqual(setB) {
 		t.Error("Expected false, got true")
 	}
 
 	// Two maps should be not equal if one empty.
-	C := ToMap([]int{})
-	if IsEqual(A, C) {
+	setC := ToMap([]int{})
+	if setA.IsEqual(setC) {
 		t.Error("Expected false, got true")
 	}
 
 	// Two maps should be equal if both empty.
-	D := ToMap([]int{})
-	if !IsEqual(C, D) {
+	setD := ToMap([]int{})
+	if !setC.IsEqual(setD) {
 		t.Error("Expected true, got false")
 	}
 }

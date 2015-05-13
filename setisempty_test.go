@@ -2,7 +2,7 @@ package calc
 
 import "testing"
 
-func TestIsEmpty(t *testing.T) {
+func TestSetIsEmpty(t *testing.T) {
 	setA := ToMap([]int{})
 	setB := ToMap([]int{1, 2, 3})
 

@@ -7,7 +7,7 @@ func TestShuffle(t *testing.T) {
 	expSet := ToMap(exp)
 	Shuffle(exp)
 	actSet := ToMap(exp)
-	if !IsEqual(expSet, actSet) {
+	if !expSet.IsEqual(actSet) {
 		t.Error("Expected", expSet, "got", actSet)
 	}
 }

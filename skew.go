@@ -1,6 +1,6 @@
 package calc
 
-// Skew returns the sample skewness.
+// Skew returns the sample moment coefficient of skewness.
 // See https://en.wikipedia.org/wiki/Skewness.
 func Skew(vals []float64) float64 {
 	mean := Mean(vals)

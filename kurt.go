@@ -1,6 +1,6 @@
 package calc
 
-// Kurt returns the sample kurtosis.
+// Kurt returns the sample moment coefficient of kurtosis.
 // See https://en.wikipedia.org/wiki/Kurtosis.
 func Kurt(vals []float64) float64 {
 	mean := Mean(vals)

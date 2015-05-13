@@ -1,6 +1,7 @@
 package calc
 
 // Fibonacci returns the Fibonacci sequence to the nth term.
+// See https://en.wikipedia.org/wiki/Fibonacci_number.
 func Fibonacci(n int) []int {
 	seq := make([]int, n)
 	seq[0] = 0

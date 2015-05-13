@@ -1,6 +1,7 @@
 package calc
 
 // Kurt returns the sample kurtosis.
+// See https://en.wikipedia.org/wiki/Kurtosis.
 func Kurt(vals []float64) float64 {
 	mean := Mean(vals)
 	stdDev := StdDev(vals)

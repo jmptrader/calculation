@@ -2,7 +2,8 @@ package calc
 
 import "math"
 
-// Sphere type
+// Sphere type.
+// See https://en.wikipedia.org/wiki/Sphere.
 type Sphere struct {
 	Radius float64
 }

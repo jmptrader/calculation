@@ -1,6 +1,7 @@
 package calc
 
-// Rectangle type
+// Rectangle type.
+// See https://en.wikipedia.org/wiki/Rectangle.
 type Rect struct {
 	Length, Width float64
 }

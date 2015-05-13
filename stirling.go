@@ -3,6 +3,7 @@ package calc
 import "math"
 
 // Stirling calculates Stirling's approximation to n!.
+// See https://en.wikipedia.org/wiki/Stirling%27s_approximation.
 func Stirling(n int) float64 {
 	f := float64(n)
 	term1 := math.Sqrt(2.0 * math.Pi * f)

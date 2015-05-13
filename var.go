@@ -1,6 +1,7 @@
 package calc
 
 // Var returns the sample variance.
+// See https://en.wikipedia.org/wiki/Variance.
 func Var(vals []float64) float64 {
 	mean := Mean(vals)
 	sum := 0.0

@@ -3,6 +3,7 @@ package calc
 import "math"
 
 // QuadRoot calculates the real roots of a quadratic equation.
+// See https://en.wikipedia.org/wiki/Quadratic_formula.
 func QuadRoot(a float64, b float64, c float64) []float64 {
 	roots := make([]float64, 0, 2)
 

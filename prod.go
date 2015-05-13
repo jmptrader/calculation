@@ -4,6 +4,7 @@ import "sort"
 
 // Prod returns the product of numbers without overflow or underflow.
 // Use for a series of floats that contain large numbers and small fractions.
+// See https://en.wikipedia.org/wiki/Product_%28mathematics%29.
 func Prod(vals []float64) float64 {
 	sort.Float64s(vals)
 	n := len(vals)

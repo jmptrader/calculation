@@ -4,6 +4,7 @@ import "sort"
 
 // FracRank returns the fraction of a list at which the given value lies.
 // If the value does not exist in the list, rank will be interpolated.
+// See https://en.wikipedia.org/wiki/Percentile.
 func FracRank(vals []float64, val float64) float64 {
 	sort.Float64s(vals)
 	n := len(vals)

@@ -3,6 +3,7 @@ package calc
 import "sort"
 
 // Med returns the median, or middle, value.
+// See https://en.wikipedia.org/wiki/Median.
 func Med(vals []float64) float64 {
 	sort.Float64s(vals)
 	med := 0.0

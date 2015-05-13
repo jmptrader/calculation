@@ -1,6 +1,7 @@
 package calc
 
 // Perm returns the permuation count of r objects taken from n.
+// See https://en.wikipedia.org/wiki/Permutation.
 func Perm(n int, r int) int {
 	perm := 1
 	for i := n - r + 1; i <= n; i++ {

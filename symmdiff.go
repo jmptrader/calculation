@@ -1,6 +1,7 @@
 package calc
 
 // SymmDiff returns the symmetric difference of A and B (elements in A or B but not both).
+// See https://en.wikipedia.org/wiki/Symmetric_difference.
 func SymmDiff(A Set, B Set) Set {
 	C := make(Set)
 	for a := range A {

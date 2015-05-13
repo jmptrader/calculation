@@ -3,6 +3,7 @@ package calc
 import "math"
 
 // StdErr returns the sample standard error.
+// See https://en.wikipedia.org/wiki/Standard_error.
 func StdErr(vals []float64) float64 {
 	mean := Mean(vals)
 	sum := 0.0

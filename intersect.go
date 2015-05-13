@@ -1,6 +1,7 @@
 package calc
 
 // Intersect forms the intersection of a variadic number of arguments.
+// See https://en.wikipedia.org/wiki/Intersection_%28set_theory%29.
 func Intersect(Sets ...Set) Set {
 	// Count the number of sets each element appears in.
 	cnts := make(map[int]int)

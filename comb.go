@@ -1,6 +1,7 @@
 package calc
 
 // Comb returns the combination count of n objects taken r at a time.
+// See https://en.wikipedia.org/wiki/Combination.
 func Comb(n int, r int) int {
 	// Since there are 2r terms, and since C(n, r) = C(n, n - r), we want to use the lesser of r and n - r.
 	if n-r < r {

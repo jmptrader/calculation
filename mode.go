@@ -3,6 +3,7 @@ package calc
 import "sort"
 
 // Mode returns the most common value(s), if any.
+// See https://en.wikipedia.org/wiki/Mode_%28statistics%29.
 func Mode(vals []float64) []float64 {
 	// Sort the values so we can compare for near equality.
 	sort.Float64s(vals)

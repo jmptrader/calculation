@@ -9,6 +9,7 @@ import (
 // If fraction is 1.0, the maximum is returned.
 // If fraction is 0.5, the median is returned.
 // If fraction is 0.0, the minimum is returned.
+// See https://en.wikipedia.org/wiki/Percentile.
 func FracLim(vals []float64, frac float64) float64 {
 	// Sort the list so we can split it.
 	sort.Float64s(vals)

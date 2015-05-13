@@ -1,6 +1,7 @@
 package calc
 
-// Skew returns the sample skew.
+// Skew returns the sample skewness.
+// See https://en.wikipedia.org/wiki/Skewness.
 func Skew(vals []float64) float64 {
 	mean := Mean(vals)
 	stdDev := StdDev(vals)

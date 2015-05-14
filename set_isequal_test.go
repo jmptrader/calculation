@@ -3,8 +3,8 @@ package calc
 import "testing"
 
 func TestSetIsEqual(t *testing.T) {
-	setA := ToMap([]int{1, 2, 3})
-	setB := ToMap([]int{3, 1, 2})
+	setA := ToSet([]int{1, 2, 3})
+	setB := ToSet([]int{3, 1, 2})
 
 	// Two maps should be equal regardless of order.
 	if !setA.IsEqual(setB) {
@@ -18,13 +18,13 @@ func TestSetIsEqual(t *testing.T) {
 	}
 
 	// Two maps should be not equal if one empty.
-	setC := ToMap([]int{})
+	setC := ToSet([]int{})
 	if setA.IsEqual(setC) {
 		t.Error("Expected false, got true")
 	}
 
 	// Two maps should be equal if both empty.
-	setD := ToMap([]int{})
+	setD := ToSet([]int{})
 	if !setC.IsEqual(setD) {
 		t.Error("Expected true, got false")
 	}

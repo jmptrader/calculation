@@ -3,8 +3,8 @@ package calc
 import "testing"
 
 func TestIsSubset(t *testing.T) {
-	setA := ToMap([]int{1, 3})
-	setB := ToMap([]int{3, 1, 2})
+	setA := ToSet([]int{1, 3})
+	setB := ToSet([]int{3, 1, 2})
 
 	// A map can be a subset regardless of order.
 	if !setA.IsSubset(setB) {
@@ -18,7 +18,7 @@ func TestIsSubset(t *testing.T) {
 	}
 
 	// An empty set is always a subset.
-	setC := ToMap([]int{})
+	setC := ToSet([]int{})
 	if !setC.IsSubset(setA) || !setC.IsSubset(setB) || !setC.IsSubset(setC) {
 		t.Error("Expected true, got false")
 	}

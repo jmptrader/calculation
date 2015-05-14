@@ -2,9 +2,9 @@ package calc
 
 import "math"
 
-// Poisson calculates a value of the Poisson distribution for x and the mean.
+// PoissonProb calculates the probability value of the Poisson distribution for the mean at x.
 // See https://en.wikipedia.org/wiki/Poisson_distribution.
-func Poisson(x int, mean float64) float64 {
+func PoissonProb(mean float64, x int) float64 {
 	res := math.Pow(math.E, -1.0*mean)
 	for i := 1; i <= x; i++ {
 		res *= mean / float64(i)

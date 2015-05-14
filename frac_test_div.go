@@ -1,0 +1,18 @@
+package calc
+
+import "testing"
+
+func TestFracDiv(t *testing.T) {
+	exp1 := Frac{14, 15}
+	frac1 := Frac{2, 3}
+	frac2 := Frac{5, 7}
+	act1 := Div(frac1, frac2)
+	if exp1 != act1 {
+		t.Error("Expected", exp1, "got", act1)
+	}
+	exp2 := Frac{15, 14}
+	act2 := Div(frac2, frac1)
+	if exp2 != act2 {
+		t.Error("Expected", exp2, "got", act2)
+	}
+}

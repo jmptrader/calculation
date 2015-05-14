@@ -2,9 +2,9 @@ package calc
 
 // IsSubset tests if A is a subset of B.
 // See https://en.wikipedia.org/wiki/Subset.
-func IsSubset(A Set, B Set) bool {
-	for a := range A {
-		if !B[a] {
+func (setA Set) IsSubset(setB Set) bool {
+	for elemA := range setA {
+		if !setB[elemA] {
 			return false
 		}
 	}

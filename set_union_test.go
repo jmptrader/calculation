@@ -9,7 +9,7 @@ func TestUnion(t *testing.T) {
 	setD := ToSet([]int{2, 1, 5, 3, 4})
 
 	// Test union..
-	if !setD.IsEqual(Union(setA, setB, setC)) {
+	if !setD.IsEqual(setA.Union(setB, setC)) {
 		t.Error("Expected true, got false")
 	}
 }

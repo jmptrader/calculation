@@ -7,14 +7,8 @@ Under development; not ready for use
 ## Areas of emphasis
 The functions are a diverse set related to:
 * Algebra
-* Geometry
 * Probability
 * Statistics
-
-The unifying factor is that all functions and types to be placed here should be centered on float64 numbers and should
-use the Near() function to compare near equality. Non-float types should be placed in other repositories, such as:
-* [graph-theory](https://github.com/BluntSporks/graph-theory)
-* [set-theory](https://github.com/BluntSporks/set-theory)
 
 ## Comparison to OpenOffice
 Here is a list of functions in this stat library compared to OpenOffice functions.

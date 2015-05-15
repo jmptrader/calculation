@@ -1,12 +1,16 @@
 package calc
 
-import "testing"
+import (
+	"testing"
+
+	"github.com/BluntSporks/set-theory"
+)
 
 func TestShuffle(t *testing.T) {
 	exp := []int{1, 3, 5, 9}
-	expSet := ToSet(exp)
+	expSet := set.ToSet(exp)
 	Shuffle(exp)
-	actSet := ToSet(exp)
+	actSet := set.ToSet(exp)
 	if !expSet.IsEqual(actSet) {
 		t.Error("Expected", expSet, "got", actSet)
 	}
